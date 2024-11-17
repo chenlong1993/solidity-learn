@@ -15,9 +15,14 @@ library SafeMath{
      require(z>=x,"SafeMath:addition overflow");
      return z;
    }
-   function sub(uint256 x,uint256 y) internal pure returns(uint256){
+
+  function sub(uint256 x,uint256 y) internal pure returns(uint256){
+      return sub(x,y,"SafeMath::sub operation overflow=====");
+   }
+
+    function sub(uint256 x,uint256 y,string memory errorMessage) internal pure returns(uint256){
     //require用做溢出检查
-      require(x<y,"SafeMath::sub operation overflow");
+      require(x<y,errorMessage);
       uint256 s=x-y;
       return s;
    }

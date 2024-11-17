@@ -33,6 +33,45 @@
 			},
 			{
 				"inputs": [],
+				"name": "getLibAdd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLibMult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLibSub",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "incr",
 				"outputs": [
 					{
@@ -58,7 +97,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Conter.sol": "Conter"
+			"contracts/001Conter.sol": "Conter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,12 +111,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Conter.sol": {
-			"keccak256": "0x12333171ab816571116d10bfd2ca69cd436c4b062398792b2aed321259c3772c",
+		"contracts/001Conter.sol": {
+			"keccak256": "0x876feb789f2ab6a3a04c10d6006a2a4160c5e02d124b10980ea5d9b1df2f2702",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://79d6bf0608fc158b3de817e9dea3cc98000dd9a85c403313089028c999e7c911",
-				"dweb:/ipfs/Qmay4r5so6LCCG2nZCVxsXuQdTSyogLFJqvYooaZAu3w8i"
+				"bzz-raw://601c2be46472758855c7e94756b503714fa1a69eb91d059fa1028cddce5f493d",
+				"dweb:/ipfs/QmSQHh7VsVpM9kPf3LtkCu2CVkQqYkuMesAPVqYWr2By6g"
+			]
+		},
+		"library/SafeMath.sol": {
+			"keccak256": "0xc890a3389312f39a1711ac2b67bb9dce684dc8242440dcf3a9f92c42aa1b6a30",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db68fc0d63748abc655e4c47395d1f23d5a6493e6c5d1b3974adbde8ce0de25f",
+				"dweb:/ipfs/QmUbDSadMCt3H6LGyiTqpfspTJ2VaH4jbcftUXENFznquB"
 			]
 		}
 	},
