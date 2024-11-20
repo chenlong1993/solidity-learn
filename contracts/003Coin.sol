@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-contract Coin{
+contract Coin {
     address public minter;
-    mapping (address=>uint) balances;
+    mapping(address => uint) balances;
 
-    event Sent(address from,address to,uint amount);
+    event Sent(address from, address to, uint amount);
 
     constructor(){
         minter = msg.sender;
@@ -15,9 +15,11 @@ contract Coin{
         require(msg.sender == minter);
         balances[receiver] += amount;
     }
-    error InsufficientBalance(uint requested,uint available);
-    function send(address reciver,uint amount) public {
-        if(amount>balances[msg.sender]){
+
+    error InsufficientBalance(uint requested, uint available);
+
+    function send(address reciver, uint amount) public {
+        if (amount > balances[msg.sender]) {
             revert InsufficientBalance({
                 requested: amount,
                 available: balances[msg.sender]
@@ -26,6 +28,6 @@ contract Coin{
         }
         balances[msg.sender] -= amount;
         balances[reciver] += amount;
-        emit Sent(msg.sender,reciver,amount);
+        emit Sent(msg.sender, reciver, amount);
     }
 }
