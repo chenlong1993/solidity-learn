@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract IOtherContract",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "callGetNum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IOtherContract",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "callGetNum2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "callSetNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ICallContract.sol": "ICallContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ICallContract.sol": {
+			"keccak256": "0x879e3915ffe1f0c23ed433d74d13442ed2700cabb3e39763683ef574ccdabc56",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a492ef3bb8f0280e65c73129dde00d7cdf0bfb5161205928774ac050d8e41176",
+				"dweb:/ipfs/QmWj2DaASTygaz4Qmimmgd4eJEbrnaUJMLYno3F7eqZixs"
+			]
+		}
+	},
+	"version": 1
+}
